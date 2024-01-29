@@ -19,7 +19,7 @@ Go to the project directory
   cd photography-courses
 ```
 
-1.- Ensure that Docker is installed on your machine. You can download and install Docker from [here](https://www.docker.com/get-started).
+1.- Ensure that [Docker](https://www.docker.com/get-started) y [Docker Compose](https://docs.docker.com/compose/install/) Compose are installed on your machine. 
 
 2.- Run the following command to build the Docker containers:
 
