@@ -79,21 +79,8 @@ to verify that the data is correct.
 
 ## Diagram
 
-graph LR
-A["/api/1/comments"]
-B["CommentWritten"]
-C["/api/lessons/1/watched"]
-D["LessonWatched"]
-E["UnlockAchievement"]
-F["AchievementsUnlocked"]
-G["UnlockBadge"]
+![Texto alternativo](https://github.com/dlrdelarocha/photography-courses/blob/main/public/event-diagram.png)
 
-A --> B
-C --> D
-B --> E
-D --> E
-E --> F
-F --> G
 
 ## License
 
