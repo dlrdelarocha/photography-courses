@@ -16,10 +16,8 @@ class CommentController extends Controller
         //Simulating that a user is logged in and creating the comment.
         Auth::loginUsingId(User::first()->id);
 
-        event(new AchievementsUnlocked(auth()->user(), "SDfsdfsdffds"));
+        $comment = Comment::first();
 
-//        $comment = Comment::first();
-//
-//        event(new CommentWritten(auth()->user(), $comment));
+        event(new CommentWritten(auth()->user(), $comment));
     }
 }
