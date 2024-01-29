@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "b5e17980-5501-4101-a2cf-aa1e1419ac69",
+		"name": "Photograpy APP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/1/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lesson Watched",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/lessons/1/watched",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"lessons",
+						"1",
+						"watched"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Goals by user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/users/1/achievements",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"users",
+						"1",
+						"achievements"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

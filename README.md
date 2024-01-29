@@ -57,15 +57,15 @@ This project includes unit tests to test models, listeners, and controllers. Run
 ## Testing with Postman
 
 
-To test the application using Postman, import the provided Postman collection that includes sample requests:
+To test the application using Postman, import the provided [Postman collection](https://github.com/dlrdelarocha/photography-courses/blob/main/public/photograpy_requests.json) that includes sample requests:
 
 Postman Collection
 
 1.- Execute requests for endpoints:
 
-http://localhost/api/1/comments
+http://localhost/api/{lessonId}/comments
 
-http://localhost/api/lessons/1/watched
+http://localhost/api/lessons/{lessonId}/watched
 
 These endpoints trigger the LessonWatched and CommentWritten events, which in turn call the UnlockAchievement listener responsible for checking if a user has unlocked a new achievement.
 
@@ -73,7 +73,7 @@ Note: The UserSeeder assigns comments and watched lessons to the user.
 
 2.- Finally 
 After completing the steps above, you can call the endpoint 
-http://localhost/users/2/achievements  
+http://localhost/users/{userId}/achievements  
 to verify that the data is correct.
 
 
