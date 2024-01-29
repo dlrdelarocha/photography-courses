@@ -46,13 +46,6 @@ Run database migrations and seeders:
   docker-compose exec app php artisan migrate --seed
 
 ```
-## Automated Tests
-
-This project includes unit tests to test models, listeners, and controllers. Run the tests using the following command:
-
-```bash
-  php artisan test
-```
 
 ## Testing with Postman
 
@@ -75,6 +68,14 @@ Note: The UserSeeder assigns comments and watched lessons to the user.
 After completing the steps above, you can call the endpoint 
 http://localhost/users/{userId}/achievements  
 to verify that the data is correct.
+
+## Automated Tests
+
+This project includes unit tests to test models, listeners, and controllers. Run the tests using the following command:
+
+```bash
+  php artisan test
+```
 
 
 ## Diagram
